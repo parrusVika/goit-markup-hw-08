@@ -1,0 +1,31 @@
+.list-thumb {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-thumb__link {
+    display: inline-flex;
+    padding: 12px;
+    border-radius: 50%;
+    fill: currentColor;
+    fill: #AFB1B8;
+
+    transition-property: background-color, fill;
+    transition-duration: var(--animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-thumb__link:hover,
+.list-thumb__link:focus {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+
+}
+
+.list-thumb__icon {
+    display: flex;
+
+}

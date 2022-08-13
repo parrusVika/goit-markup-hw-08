@@ -1,0 +1,31 @@
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: var(--secodary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(16/26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+
+}
+
+.logo__logo-studio {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(16/26);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.logo__footer-logo {
+    font-family: var(--secodary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(16/26);
+    letter-spacing: 0.03em;
+    color: var(--light-bg-cl);
+}

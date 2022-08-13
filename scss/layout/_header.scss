@@ -1,0 +1,24 @@
+.header-page {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--light-bg-cl);
+    border-bottom: 1px solid#ECECEC;
+}
+
+.header-page__container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1200px;
+}
+
+.header-nav {
+    align-items: center;
+    display: flex;
+}
