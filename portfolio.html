@@ -25,35 +25,43 @@
     <!--Header-->
     <header class="header-page" data-header>
         <div class="header-page__container">
-            <nav class="header-nav">
-                <a class="logo" href="/">Web<span class="logo__logo-studio">Studio</span></a>
-                <ul class="header-link">
+            <a class="logo" href="/">Web<span class="logo__logo-studio">Studio</span></a>
+            <button type="button" class="mobil-button is-open" aria-expanded="false" data-menu-button>
+                <svg width="40px" height="40px" aria-controls="menu-navigation"
+                    aria-label="переключатель мобильного меню">
+                    <use class="icon-close" href="./images/symbol-defs.svg#icon-close-1"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-1"></use>
+                </svg>
+            </button>
+            <div class="menu-navigation is-open" id="menu-navigation" data-menu>
+                <nav class="header-nav">
+                    <ul class="header-link">
+                        <li class="header-link__item">
+                            <a class="header-link__contacts header-link__studio-current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="header-link__item">
+                            <a class="header-link__contacts" href="">Портфолио</a>
+                        </li>
+                        <li class="header-link__item">
+                            <a class="header-link__contacts" href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-link__list">
                     <li class="header-link__item">
-                        <a class="header-link__contacts header-link__studio-current" href="./index.html">Студия</a>
+                        <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
+                                width="16px" height="12px">
+                                <use href="./images/symbol-defs.svg#envelope-1"></use>
+                            </svg>info@devstudio.com</a>
                     </li>
                     <li class="header-link__item">
-                        <a class="header-link__contacts" href="./">Портфолио</a>
-                    </li>
-                    <li class="header-link__item">
-                        <a class="header-link__contacts" href="/">Контакты</a>
+                        <a class="header-link__contacts" href="+380961111111"> <svg class="header-link__icon"
+                                width="10px" height="16px">
+                                <use href="./images/symbol-defs.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="header-link__list">
-                <li class="header-link__item">
-                    <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
-                            width="16px" height="12px">
-                            <use href="./images/symbol-defs.svg#envelope-1"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="header-link__item">
-                    <a class="header-link__contacts" href="+380961111111"> <svg class="header-link__icon" width="10px"
-                            height="16px">
-                            <use href="./images/symbol-defs.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -498,22 +506,22 @@
                     <ul class="footer-soclist">
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#instagram"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#twitter"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#facebook"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                 </svg>
                             </a></li>
                     </ul>
