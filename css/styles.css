@@ -272,7 +272,7 @@ img {
     border-radius: 4px;
     background-color: #FFFFFF;
 
-} */
+}  */
 
 /* .modal-btn {
     position: absolute;
@@ -382,9 +382,9 @@ img {
 .modal-for-texterea:focus+.modal-for-label,
 .modal-for-texterea:not(:placeholder-shown) {
     border-color: var(--accent-color);
-}
+} */
 
-.visualy-hidden {
+/* .visualy-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -442,6 +442,7 @@ img {
     background-color: #2196F3;
 } */
 
+*/
 /* About */
 
 /* .about-page__hidden {

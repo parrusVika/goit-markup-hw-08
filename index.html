@@ -23,39 +23,47 @@
     <!-- Castom styles -->
 </head>
 
-<body data-page class="body no-scroll">
+<body data-page class="body">
     <!--Header-->
     <header class="header-page" data-header>
         <div class="header-page__container">
-            <nav class="header-nav">
-                <a class="logo" href="/">Web<span class="logo__logo-studio">Studio</span></a>
-                <ul class="header-link">
+            <a class="logo" href="/">Web<span class="logo__logo-studio">Studio</span></a>
+            <button type="button" class="mobil-button is-open" aria-expanded="false" data-menu-button>
+                <svg width="40px" height="40px" aria-controls="menu-navigation"
+                    aria-label="переключатель мобильного меню">
+                    <use class="icon-close" href="./images/symbol-defs.svg#icon-close-1"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-1"></use>
+                </svg>
+            </button>
+            <div class="menu-navigation is-open" id="menu-navigation" data-menu>
+                <nav class="header-nav">
+                    <ul class="header-link">
+                        <li class="header-link__item">
+                            <a class="header-link__contacts header-link__studio-current" href="Студия">Студия</a>
+                        </li>
+                        <li class="header-link__item">
+                            <a class="header-link__contacts" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header-link__item">
+                            <a class="header-link__contacts" href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-link__list">
                     <li class="header-link__item">
-                        <a class="header-link__contacts header-link__studio-current" href="Студия">Студия</a>
+                        <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
+                                width="16px" height="12px">
+                                <use href="./images/symbol-defs.svg#envelope-1"></use>
+                            </svg>info@devstudio.com</a>
                     </li>
                     <li class="header-link__item">
-                        <a class="header-link__contacts" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header-link__item">
-                        <a class="header-link__contacts" href="/">Контакты</a>
+                        <a class="header-link__contacts" href="+380961111111"> <svg class="header-link__icon"
+                                width="10px" height="16px">
+                                <use href="./images/symbol-defs.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="header-link__list">
-                <li class="header-link__item">
-                    <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
-                            width="16px" height="12px">
-                            <use href="./images/symbol-defs.svg#envelope-1"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="header-link__item">
-                    <a class="header-link__contacts" href="+380961111111"> <svg class="header-link__icon" width="10px"
-                            height="16px">
-                            <use href="./images/symbol-defs.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <!--Hero-->
@@ -72,18 +80,18 @@
             <div class="container">
                 <h2 hidden class="about-page__hidden">About</h2>
                 <ul class="about-list">
-                    <li>
+                    <li class="about-item">
                         <div class="about-list__thumb"><svg class="about-list__icon" width="70px" height="70">
-                                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-antenna"></use>
                             </svg></div>
                         <h3 class="about-list__text">Внимание к деталям</h3>
                         <p class="about-list__item">Идейные соображения, а также начало повседневной работы по
                             формированию
                             позиции.</p>
                     </li>
-                    <li>
+                    <li class="about-item">
                         <div class="about-list__thumb"><svg class="about-list__icon" width="70px" height="70">
-                                <use href="./images/symbol-defs.svg#icon-clock"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-clock"></use>
                             </svg></div>
                         <h3 class="about-list__text">Пунктуальность</h3>
                         <p class="about-list__item">Задача организации, в особенности же рамки и место обучения кадров
@@ -92,17 +100,17 @@
                             собой.
                         </p>
                     </li>
-                    <li>
+                    <li class="about-item">
                         <div class="about-list__thumb"><svg class="about-list__icon" width="70px" height="70">
-                                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-diagram"></use>
                             </svg></div>
                         <h3 class="about-list__text">Планирование</h3>
                         <p class="about-list__item">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="about-item">
                         <div class="about-list__thumb"><svg class="about-list__icon" width="70px" height="70">
-                                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-astronaut"></use>
                             </svg></div>
                         <h3 class="about-list__text">Современные технологии</h3>
                         <p class="about-list__item">Значимость этих проблем настолько очевидна, что реализация плановых
@@ -111,14 +119,14 @@
                 </ul>
             </div>
         </section>
-        <section class="about-list">
+        <section class="about-list-img">
             <div class="container">
                 <h2 class="about-product__title">Чем мы занимаемся</h2>
                 <ul class="about-product__elements">
-                    <li><img src="./images/box1.png" alt="website-development" width="370">
+                    <li><img src="./overley.svg/box1.png" alt="website-development" width="370">
                     </li>
-                    <li><img src="./images/box2.png" alt="application-development" width="370"></li>
-                    <li><img src="./images/box3.png" alt="designed" width="370"></li>
+                    <li><img src="./overley.svg/box2.png" alt="application-development" width="370"></li>
+                    <li><img src="./overley.svg/box3.png" alt="designed" width="370"></li>
                 </ul>
             </div>
         </section>
@@ -127,41 +135,66 @@
             <div class="container">
                 <h2 class="team-member__title">Наша команда</h2>
                 <ul class="team-member__list">
-                    <li>
-                        <img src="./images/img(1).jpg" alt="" width="270">
+                    <li class="team-card">
+                        <picture>
+                            <!-- desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./image.team\img@2x_lg.jpg 1x, image.team\img@2x_lg.jpg 2x" type="image/jpg">
+                            <!-- tablet -->
+                            <source media="(min-width: 768px)"
+                                srcset="./image.team\img@2x_md.jpg 1x, image.team\img@2x_md.jpg 2x" type="image/jpg">
+                            <!-- mobil -->
+                            <source media="(max-width: 767px)"
+                                srcset="./image.team\img@2x_sm.jpg 1x, image.team\img@2x_sm.jpg 2x" type="image/jpg">
+                            <img src="./image.team\img@2x_sm.jpg 1x" alt="" width="450px">
+                        </picture>
                         <div class="team-member__container">
                             <h3 class="team-member__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-member__item">Product Designer</p>
                             <ul class="list-thumb">
                                 <li><a class="list-thumb__link" href="">
                                         <svg class="list-thumb__icon" width="20px" height="20px">
-                                            <use href="./images/symbol-defs.svg#instagram"></use>
+                                            <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li><a class="list-thumb__link" href="">
                                         <svg class="list-thumb__icon" width="20px" height="20px">
-                                            <use href="./images/symbol-defs.svg#twitter"></use>
+                                            <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li><a class="list-thumb__link" href="">
                                         <svg class="list-thumb__icon" width="20px" height="20px">
-                                            <use href="./images/symbol-defs.svg#facebook"></use>
+                                            <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li><a class="list-thumb__link" href="">
                                         <svg class="list-thumb__icon" width="20px" height="20px">
-                                            <use href="./images/symbol-defs.svg#linkedin"></use>
+                                            <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                         </svg>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <img src="./images/img(2).jpg" alt="" width="270">
+                    <li class="team-card">
+                        <picture>
+                            <!-- desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./image.team\img@2x_lg-1.jpg 1x, image.team\img@2x_lg-1.jpg 2x"
+                                type="image/jpg">
+                            <!-- tablet -->
+                            <source media="(min-width: 768px)"
+                                srcset="./image.team\img@2x_md-1.jpg 1x, image.team\img@2x_md-1.jpg 2x"
+                                type="image/jpg">
+                            <!-- mobil -->
+                            <source media="(max-width: 767px)"
+                                srcset="./image.team\img@2x_sm-1.jpg 1x, image.team\img@2x_sm-1.jpg 2x"
+                                type="image/jpg">
+                            <img src="./image.team\img@2x_sm-1.jpg 1x" alt="" width="450px">
+                        </picture>
                         <div class="team-member__container">
                             <h3 class="team-member__name">Ольга Репина</h3>
                             <p lang="en" class="team-member__item">Frontend Developer</p>
@@ -169,25 +202,25 @@
                                 <ul class="list-thumb">
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#instagram"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#twitter"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#facebook"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -195,8 +228,22 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <img src="./images/img(3).jpg" alt="" width="270">
+                    <li class="team-card">
+                        <picture>
+                            <!-- desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./image.team\img@2x_lg-2.jpg 1x, image.team\img@2x_lg-2.jpg 2x"
+                                type="image/jpg">
+                            <!-- tablet -->
+                            <source media="(min-width: 768px)"
+                                srcset="./image.team\img@2x_md-2.jpg 1x, image.team\img@2x_md-2.jpg 2x"
+                                type="image/jpg">
+                            <!-- mobil -->
+                            <source media="(max-width: 767px)"
+                                srcset="./image.team\img@2x_sm-2.jpg 1x, image.team\img@2x_sm-2.jpg 2x"
+                                type="image/jpg">
+                            <img src="./image.team\img@2x_sm-2.jpg 1x" alt="" width="450px">
+                        </picture>
                         <div class="team-member__container">
                             <h3 class="team-member__name">Николай Тарасов</h3>
                             <p lang="en" class="team-member__item">Marketing</p>
@@ -204,25 +251,25 @@
                                 <ul class="list-thumb">
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#instagram"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#twitter"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#facebook"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -230,8 +277,22 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <img src="./images/img(4).jpg" alt="" width="270">
+                    <li class="team-card">
+                        <picture>
+                            <!-- desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./image.team\img@2x_lg-3.jpg 1x, image.team\img@2x_lg-3.jpg 2x"
+                                type="image/jpg">
+                            <!-- tablet -->
+                            <source media="(min-width: 768px)"
+                                srcset="./image.team\img@2x_md-3.jpg 1x, image.team\img@2x_md-3.jpg 2x"
+                                type="image/jpg">
+                            <!-- mobil -->
+                            <source media="(max-width: 767px)"
+                                srcset="./image.team\img@2x_sm-3.jpg 1x, image.team\img@2x_sm-3.jpg 2x"
+                                type="image/jpg">
+                            <img src="./image.team\img@2x_sm-3.jpg 1x" alt="" width="450px">
+                        </picture>
                         <div class="team-member__container">
                             <h3 class="team-member__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-member__item">UI Designer</p>
@@ -239,25 +300,25 @@
                                 <ul class="list-thumb">
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#instagram"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#twitter"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#facebook"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li><a class="list-thumb__link" href="">
                                             <svg class="list-thumb__icon" width="20px" height="20px">
-                                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                                                <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -276,32 +337,32 @@
                     <li class="clients-thumb">
                         <a class="clients-link" href="">
                             <svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-1-1"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-1-1"></use>
                             </svg></a>
                     </li>
                     <li class="clients-thumb">
                         <a class="clients-link" href=""><svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-2-1"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-2-1"></use>
                             </svg></a>
                     </li>
                     <li class="clients-thumb">
                         <a class="clients-link" href=""><svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-3-1"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-3-1"></use>
                             </svg></a>
                     </li>
                     <li class="clients-thumb">
                         <a class="clients-link" href=""><svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-4-4"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-4-4"></use>
                             </svg></a>
                     </li>
                     <li class="clients-thumb">
                         <a class="clients-link" href=""><svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-5-1"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-5-1"></use>
                             </svg></a>
                     </li>
                     <li class="clients-thumb">
                         <a class="clients-link" href=""><svg class="clients-icon" width="106px" height="60px">
-                                <use href="./images/symbol-defs.svg#icon-Logo-6-1"></use>
+                                <use href="./overley.svg/symbol-defs.svg#icon-Logo-6-1"></use>
                             </svg></a>
                     </li>
 
@@ -332,22 +393,22 @@
                     <ul class="footer-soclist">
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#instagram"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#instagram"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#twitter"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#twitter"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#facebook"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#facebook"></use>
                                 </svg>
                             </a></li>
                         <li><a class="footer-soclist__link" href="">
                                 <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                                    <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
                                 </svg>
                             </a></li>
                     </ul>
@@ -426,6 +487,7 @@
     </div>
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/js menu.js"></script>
 </body>
 
 </html>

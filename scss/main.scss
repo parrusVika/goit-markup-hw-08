@@ -1,6 +1,7 @@
 // utils/
 @import './utils/variables';
 @import "./utils/visually-hidden";
+@import "./utils/breakpoints";
 // base
 @import "./base/base";
 @import "./base/reset";
@@ -13,9 +14,9 @@
 @import "./components/container";
 @import "./components/titles";
 @import "./components/bakdrop";
-@import "./components/modal";
+@import "./components/modal-btn";
 @import "./components/modal-form";
-@import "./components/modal";
+@import "./components/modal-window";
 @import "./components/section";
 @import "./components/logo";
 @import "./components/overlay";
@@ -26,9 +27,7 @@
 @import "./layout/about";
 @import "./layout/about-img";
 @import "./layout/team";
-@import "./layout/social-list";
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./components/link";
-@import "./layout/footer-form";
 @import "./layout/portfolio";

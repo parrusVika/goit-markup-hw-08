@@ -1,6 +1,16 @@
 .clients-list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 767px) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .clients-thumb {
