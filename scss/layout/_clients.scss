@@ -2,20 +2,40 @@
     display: flex;
     gap: 30px;
 
-    @media screen and (max-width: 480px) {
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 767px) {
+    @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+
     }
 }
 
 .clients-thumb {
     width: 170px;
     height: 92px;
+
+    @media screen and (max-width: 767px) {
+        width: 210px;
+        height: 92px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 226px;
+        height: 92px;
+    }
 }
 
 .clients-link {
