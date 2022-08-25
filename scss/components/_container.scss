@@ -34,15 +34,15 @@
     width: 1200px;
 
     @media screen and (min-width: 480px) {
-        width: 448px;
+        width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 720px;
+        width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1170px;
+        width: 1200px;
     }
 }
 
@@ -57,18 +57,18 @@
     width: 1200px;
     background-color: #FFFFFF;
 
-    @media screen and (min-width: 480px) {
-        width: 448px;
+    @media screen and (max-width: 480px) {
+        width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 720px;
-        display: inline;
-        text-align: center;
+        width: 768px;
+        // display: inline;
+        // text-align: center;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1170px;
+        width: 1200px;
     }
 }
 

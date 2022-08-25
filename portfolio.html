@@ -29,38 +29,55 @@
             <button type="button" class="mobil-button is-open" aria-expanded="false" data-menu-button>
                 <svg width="40px" height="40px" aria-controls="menu-navigation"
                     aria-label="переключатель мобильного меню">
-                    <use class="icon-close" href="./images/symbol-defs.svg#icon-close-1"></use>
-                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-1"></use>
+                    <use class="icon-close" href="./overley.svg/symbol-defs.svg#icon-close-1"></use>
+                    <use class="icon-menu" href="./overley.svg/symbol-defs.svg#icon-menu-1"></use>
                 </svg>
             </button>
             <div class="menu-navigation is-open" id="menu-navigation" data-menu>
-                <nav class="header-nav">
-                    <ul class="header-link">
+                <div class="menu-mobil">
+                    <nav class="header-nav">
+                        <ul class="header-link">
+                            <li class="header-link__item">
+                                <a class="header-link__contacts header-link__studio-current" href="Студия">Студия</a>
+                            </li>
+                            <li class="header-link__item">
+                                <a class="header-link__contacts" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="header-link__item">
+                                <a class="header-link__contacts" href="/">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header-link__list">
                         <li class="header-link__item">
-                            <a class="header-link__contacts header-link__studio-current" href="./index.html">Студия</a>
+                            <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
+                                    width="16px" height="12px">
+                                    <use href="./overley.svg/symbol-defs.svg#envelope-1"></use>
+                                </svg>info@devstudio.com</a>
                         </li>
                         <li class="header-link__item">
-                            <a class="header-link__contacts" href="">Портфолио</a>
-                        </li>
-                        <li class="header-link__item">
-                            <a class="header-link__contacts" href="/">Контакты</a>
+                            <a class="header-link__contacts-namber" href="+380961111111"> <svg class="header-link__icon"
+                                    width="10px" height="16px">
+                                    <use href="./overley.svg/symbol-defs.svg#smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="header-link__list">
-                    <li class="header-link__item">
-                        <a class="header-link__contacts" href="info@devstudio.com"> <svg class="header-link__icon"
-                                width="16px" height="12px">
-                                <use href="./images/symbol-defs.svg#envelope-1"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="header-link__item">
-                        <a class="header-link__contacts" href="+380961111111"> <svg class="header-link__icon"
-                                width="10px" height="16px">
-                                <use href="./images/symbol-defs.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
+                    <ul class="mobil-soclist">
+                        <li class="mobil-soclist">
+                            <a class="mobil-socials__link" href="https://www.instagram.com" target="_blank"
+                                rel="noreferrer nofollow noopener">Instagram</a>
+                        </li>
+                        <li class="mobil-soclist">
+                            <a class="mobil-socials__link" href="https://www.instagram.com" target="_blank"
+                                rel="noreferrer nofollow noopener">Twitter</a>
+                        </li>
+                        <li class="mobil-soclist"><a class="mobil-socials__link" href="https://www.instagram.com"
+                                target="_blank" rel="noreferrer nofollow noopener">Facebook</a></li>
+                        <li class="mobil-soclist"><a class="mobil-socials__link" href="https://www.instagram.com"
+                                target="_blank" rel="noreferrer nofollow noopener">Linkedin</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </header>
@@ -71,8 +88,6 @@
                 <ul class="portfolio-btn-list">
                     <li>
                         <button class="all-button" type="button">Все</button>
-                        </button>
-
                     </li>
                     <li>
                         <button class="button" type="button">Веб-сайты
@@ -98,26 +113,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg.webp 1x, images.portfolio\img@1x_lg.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg.webp 1x, images.portfolio/img@1x_lg.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg.jpg 1x, images.portfolio\img@1x_lg.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg.jpg 1x, images.portfolio/img@1x_lg.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md.webp 1x, images.portfolio\img@1x_md.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md.webp 1x, images.portfolio/img@1x_md.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md.jpg 1x, images.portfolio\img@1x_md.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md.jpg 1x, images.portfolio/img@1x_md.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm.webp 1x, images.portfolio\img@1x_sm.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm.webp 1x, images.portfolio/img@1x_sm.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm.jpg 1x, images.portfolio\img@1x_sm.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm.jpg 1x, images.portfolio/img@1x_sm.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm.jpg" alt="team members" width="370">
                                 </picture>
 
                                 <div class="overlay">
@@ -142,26 +157,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-1.webp 1x, images.portfolio\img@1x_lg-1.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-1.webp 1x, images.portfolio/img@1x_lg-1.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-1.jpg 1x, images.portfolio\img@1x_lg-1.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-1.jpg 1x, images.portfolio/img@1x_lg-1.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-1.webp 1x, images.portfolio\img@1x_md-1.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-1.webp 1x, images.portfolio/img@1x_md-1.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-1.jpg 1x, images.portfolio\img@1x_md-1.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-1.jpg 1x, images.portfolio/img@1x_md-1.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-1.webp 1x, images.portfolio\img@1x_sm-1.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-1.webp 1x, images.portfolio/img@1x_sm-1.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-1.jpg 1x, images.portfolio\img@1x_sm-1.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-1.jpg 1x, images.portfolio/img@1x_sm-1.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-1.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-1.jpg" alt="team members" width="369">
                                 </picture>
 
                                 <div class="overlay">
@@ -186,26 +201,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-2.webp 1x, images.portfolio\img@1x_lg-2.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-2.webp 1x, images.portfolio/img@1x_lg-2.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-2.jpg 1x, images.portfolio\img@1x_lg-2.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-2.jpg 1x, images.portfolio/img@1x_lg-2.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-2.webp 1x, images.portfolio\img@1x_md-2.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-2.webp 1x, images.portfolio/img@1x_md-2.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-2.jpg 1x, images.portfolio\img@1x_md-2.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-2.jpg 1x, images.portfolio/img@1x_md-2.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-2.webp 1x, images.portfolio\img@1x_sm-2.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-2.webp 1x, images.portfolio/img@1x_sm-2.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-2.jpg 1x, images.portfolio\img@1x_sm-2.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-2.jpg 1x, images.portfolio/img@1x_sm-2.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-2.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-2.jpg" alt="team members" width="370">
                                 </picture>
                                 <div class="overlay">
                                     <div class="overlay-text">
@@ -228,26 +243,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-3.webp 1x, images.portfolio\img@1x_lg-3.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-3.webp 1x, images.portfolio/img@1x_lg-3.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-3.jpg 1x, images.portfolio\img@1x_lg-3.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-3.jpg 1x, images.portfolio/img@1x_lg-3.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-3.webp 1x, images.portfolio\img@1x_md-3.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-3.webp 1x, images.portfolio/img@1x_md-3.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-3.jpg 1x, images.portfolio\img@1x_md-3.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-3.jpg 1x, images.portfolio/img@1x_md-3.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-3.webp 1x, images.portfolio\img@1x_sm-3.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-3.webp 1x, images.portfolio/img@1x_sm-3.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-3.jpg 1x, images.portfolio\img@1x_sm-3.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-3.jpg 1x, images.portfolio/img@1x_sm-3.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-3.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-3.jpg" alt="team members" width="370">
                                 </picture>
 
                                 <div class="overlay">
@@ -271,26 +286,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-4.webp 1x, images.portfolio\img@1x_lg-4.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-4.webp 1x, images.portfolio/img@1x_lg-4.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-4.jpg 1x, images.portfolio\img@1x_lg-4.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-4.jpg 1x, images.portfolio/img@1x_lg-4.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-4.webp 1x, images.portfolio\img@1x_md-4.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-4.webp 1x, images.portfolio/img@1x_md-4.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-4.jpg 1x, images.portfolio\img@1x_md-4.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-4.jpg 1x, images.portfolio/img@1x_md-4.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-4.webp 1x, images.portfolio\img@1x_sm-4.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-4.webp 1x, images.portfolio/img@1x_sm-4.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-4.jpg 1x, images.portfolio\img@1x_sm-4.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-4.jpg 1x, images.portfolio/img@1x_sm-4.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-4.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-4.jpg" alt="team members" width="370">
                                 </picture>
                                 <div class="overlay">
                                     <div class="overlay-text">
@@ -302,8 +317,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-text">
-                                <h2 class="portflio-title">Проект Boxes</h2>
-                                <p class="portfolio-item">Приложение/p>
+                                <h2 class="portfolio-title">Проект Boxes</h2>
+                                <p class="portfolio-item">Приложение/p</p>
                             </div>
                         </a>
                     </li>
@@ -313,26 +328,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-5.webp 1x, images.portfolio\img@1x_lg-5.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-5.webp 1x, images.portfolio/img@1x_lg-5.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-5.jpg 1x, images.portfolio\img@1x_lg-5.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-5.jpg 1x, images.portfolio/img@1x_lg-5.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-5.webp 1x, images.portfolio\img@1x_md-5.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-5.webp 1x, images.portfolio/img@1x_md-5.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-5.jpg 1x, images.portfolio\img@1x_md-5.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-5.jpg 1x, images.portfolio/img@1x_md-5.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-5.webp 1x, images.portfolio\img@1x_sm-5.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-5.webp 1x, images.portfolio/img@1x_sm-5.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-5.jpg 1x, images.portfolio\img@1x_sm-5.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-5.jpg 1x, images.portfolio/img@1x_sm-5.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-5.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-5.jpg" alt="team members" width="370">
                                 </picture>
 
                                 <div class="overlay">
@@ -356,26 +371,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-6.webp 1x, images.portfolio\img@1x_lg-6.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-6.webp 1x, images.portfolio/img@1x_lg-6.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-6.jpg 1x, images.portfolio\img@1x_lg-6.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-6.jpg 1x, images.portfolio/img@1x_lg-6.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-6.webp 1x, images.portfolio\img@1x_md-6.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-6.webp 1x, images.portfolio/img@1x_md-6.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-6.jpg 1x, images.portfolio\img@1x_md-6.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-6.jpg 1x, images.portfolio/img@1x_md-6.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-6.webp 1x, images.portfolio\img@1x_sm-6.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-6.webp 1x, images.portfolio/img@1x_sm-6.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-6.jpg 1x, images.portfolio\img@1x_sm-6.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-6.jpg 1x, images.portfolio/img@1x_sm-6.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-6.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-6.jpg" alt="team members" width="370">
                                 </picture>
                                 <div class="overlay">
                                     <div class="overlay-text">
@@ -398,26 +413,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-7.webp 1x, images.portfolio\img@1x_lg-7.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-7.webp 1x, images.portfolio/img@1x_lg-7.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-7.jpg 1x, images.portfolio\img@1x_lg-7.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-7.jpg 1x, images.portfolio/img@1x_lg-7.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-7.webp 1x, images.portfolio\img@1x_md-7.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-7.webp 1x, images.portfolio/img@1x_md-7.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-7.jpg 1x, images.portfolio\img@1x_md-7.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-7.jpg 1x, images.portfolio/img@1x_md-7.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-7.webp 1x, images.portfolio\img@1x_sm-7.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-7.webp 1x, images.portfolio/img@1x_sm-7.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-7.jpg 1x, images.portfolio\img@1x_sm-7.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-7.jpg 1x, images.portfolio/img@1x_sm-7.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-7.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-7.jpg" alt="team members" width="370">
                                 </picture>
                                 <div class="overlay">
                                     <div class="overlay-text">
@@ -440,26 +455,26 @@
                                 <picture>
                                     <!-- desktop -->
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-8.webp 1x, images.portfolio\img@1x_lg-8.webp 2x"
+                                        srcset="./images.portfolio/img@1x_lg-8.webp 1x, images.portfolio/img@1x_lg-8.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 1200px)"
-                                        srcset="./images.portfolio\img@1x_lg-8.jpg 1x, images.portfolio\img@1x_lg-8.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_lg-8.jpg 1x, images.portfolio/img@1x_lg-8.jpg 2x"
                                         type="image/jpg">
                                     <!-- tablet -->
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-1.webp 1x, images.portfolio\img@1x_md-8.webp 2x"
+                                        srcset="./images.portfolio/img@1x_md-1.webp 1x, images.portfolio/img@1x_md-8.webp 2x"
                                         type="image/webp">
                                     <source media="(min-width: 768px)"
-                                        srcset="./images.portfolio\img@1x_md-8.jpg 1x, images.portfolio\img@1x_md-8.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_md-8.jpg 1x, images.portfolio/img@1x_md-8.jpg 2x"
                                         type="image/jpg">
                                     <!-- mobil -->
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-8.webp 1x, images.portfolio\img@1x_sm-8.webp 2x"
+                                        srcset="./images.portfolio/img@1x_sm-8.webp 1x, images.portfolio/img@1x_sm-8.webp 2x"
                                         type="image/webp">
                                     <source media="(max-width: 767px)"
-                                        srcset="./images.portfolio\img@1x_sm-8.jpg 1x, images.portfolio\img@1x_sm-8.jpg 2x"
+                                        srcset="./images.portfolio/img@1x_sm-8.jpg 1x, images.portfolio/img@1x_sm-8.jpg 2x"
                                         type="image/jpg">
-                                    <img src="./images.portfolio\img@1x_sm-8.jpg" alt="team members" width="370">
+                                    <img src="./images.portfolio/img@1x_sm-8.jpg" alt="team members" width="370">
                                 </picture>
 
                                 <div class="overlay">
@@ -487,45 +502,48 @@
     <footer>
         <section class="footer">
             <div class="footer__container">
-                <div>
-                    <a href="/" class="logo">Web<span class="logo__footer-logo">Studio</span></a>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__address" href="https://bit.ly/3pXMvUd" target="_blank"
-                                rel="noopener-noreferrer">г.
-                                Киев,
-                                пр-т
-                                Леси Украинки, 26</a> </li>
-                        <li><a class="footer-list__link"
-                                href="mailto:info@devstudio.com"><span>info@example.com</span></a>
-                        </li>
-                        <li><a class="footer-list__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
+                <div class="footer-tablet">
+                    <div class="footer-address">
+                        <a href="/" class="logo">Web<span class="logo__footer-logo">Studio</span></a>
+                        <ul class="footer-list">
+                            <li><a class="footer-list__address" href="https://bit.ly/3pXMvUd" target="_blank"
+                                    rel="noopener-noreferrer">г.
+                                    Киев,
+                                    пр-т
+                                    Леси Украинки, 26</a> </li>
+                            <li><a class="footer-list__link"
+                                    href="mailto:info@devstudio.com"><span>info@example.com</span></a>
+                            </li>
+                            <li><a class="footer-list__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-strong">
+                        <h2 class="footer-strong__title">присоединяйтесь</h2>
+                        <ul class="footer-soclist">
+                            <li><a class="footer-soclist__link" href="">
+                                    <svg class="footer-soclist__icon" width="20px" height="20px">
+                                        <use href="./overley.svg/symbol-defs.svg#instagram"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a class="footer-soclist__link" href="">
+                                    <svg class="footer-soclist__icon" width="20px" height="20px">
+                                        <use href="./overley.svg/symbol-defs.svg#twitter"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a class="footer-soclist__link" href="">
+                                    <svg class="footer-soclist__icon" width="20px" height="20px">
+                                        <use href="./overley.svg/symbol-defs.svg#facebook"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a class="footer-soclist__link" href="">
+                                    <svg class="footer-soclist__icon" width="20px" height="20px">
+                                        <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-strong">
-                    <h2 class="footer-strong__title">присоединяйтесь</h2>
-                    <ul class="footer-soclist">
-                        <li><a class="footer-soclist__link" href="">
-                                <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./overley.svg/symbol-defs.svg#instagram"></use>
-                                </svg>
-                            </a></li>
-                        <li><a class="footer-soclist__link" href="">
-                                <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./overley.svg/symbol-defs.svg#twitter"></use>
-                                </svg>
-                            </a></li>
-                        <li><a class="footer-soclist__link" href="">
-                                <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./overley.svg/symbol-defs.svg#facebook"></use>
-                                </svg>
-                            </a></li>
-                        <li><a class="footer-soclist__link" href="">
-                                <svg class="footer-soclist__icon" width="20px" height="20px">
-                                    <use href="./overley.svg/symbol-defs.svg#linkedin"></use>
-                                </svg>
-                            </a></li>
-                    </ul>
-                </div>
+
                 <div class="footer-email">
                     <h2 class="footer-email__strong">Подпишитесь на рассылку</h2>
                     <form class="footer-form">
