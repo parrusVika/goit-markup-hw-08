@@ -14,6 +14,7 @@
         position: relative;
 
 
+
     }
 
     @media screen and (min-width: 768px) {
@@ -299,28 +300,28 @@
 .mobil-soc {
     display: flex;
     flex-direction: row;
-
+    gap: 10px;
     padding-top: 60px;
-    padding-left: 40px;
     padding-bottom: 48px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 481px) {
         display: none;
     }
 }
 
 .mobil-soclist {
-    gap: 10px;
+
     display: flex;
     padding: 0;
     border-right: 1px solid;
     color: var(--accent-color);
+    align-items: flex-start;
 
     &:nth-last-child(-n + 1) {
         border: 0;
     }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 481px) {
         display: none;
     }
 }
