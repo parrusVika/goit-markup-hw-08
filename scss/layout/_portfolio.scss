@@ -36,12 +36,13 @@
 }
 
 .portfolio-card {
+
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     column-gap: 30px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1200px) {
         align-items: center;
         justify-content: center;
     }
