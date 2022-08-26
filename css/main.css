@@ -282,7 +282,7 @@ img {
   padding-left: 15px;
   width: 1200px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -876,7 +876,7 @@ img {
 .mobil-button {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .mobil-button {
     z-index: 100;
     display: -webkit-inline-box;
@@ -1123,7 +1123,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 274px;
+    margin-top: 270px;
     margin-bottom: 40px;
     margin-left: 0;
   }
@@ -1163,7 +1163,7 @@ img {
   }
 }
 
-.mobil-soclist {
+.mobil-soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1171,24 +1171,32 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 10px;
   padding-top: 60px;
   padding-left: 40px;
   padding-bottom: 48px;
 }
-@media screen and (min-width: 768px) {
-  .mobil-soclist {
+@media screen and (min-width: 480px) {
+  .mobil-soc {
     display: none;
   }
 }
 
 .mobil-soclist {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0;
   border-right: 1px solid;
   color: var(--accent-color);
 }
 .mobil-soclist:nth-last-child(-n+1) {
   border: 0;
+}
+@media screen and (min-width: 480px) {
+  .mobil-soclist {
+    display: none;
+  }
 }
 
 .mobil-socials__link {
@@ -1774,17 +1782,6 @@ img {
   background-color: #2F303A;
 }
 
-.portfolio-link {
-  text-decoration: none;
-}
-.portfolio-link:hover .overlay, .portfolio-link:focus .overlay {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1796,7 +1793,7 @@ img {
           justify-content: center;
   outline-style: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .portfolio-btn-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1806,12 +1803,26 @@ img {
             justify-content: start;
   }
 }
-@media screen and (max-width: 1200px) {
-  .portfolio-btn-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 50px;
+
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-link:hover .overlay, .portfolio-link:focus .overlay {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1826,10 +1837,8 @@ img {
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1838,38 +1847,22 @@ img {
             justify-content: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
-@media screen and (max-width: 480px) {
-  .card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+@media screen and (max-width: 767px) {
+  .card:not(:nth-last-child(-n+1)) {
+    margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 50%;
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card {
-    display: block;
   }
 }
 
@@ -1878,4 +1871,11 @@ img {
   border-right: solid #EEEEEE 1px;
   border-bottom: solid #EEEEEE 1px;
   border-left: solid #EEEEEE 1px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
