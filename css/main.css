@@ -340,11 +340,14 @@ img {
   padding-left: 15px;
   width: 1200px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer__container {
     width: 768px;
-    display: inline;
-    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -352,8 +355,9 @@ img {
     width: 768px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -362,8 +366,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__container {
     width: 1200px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
@@ -1580,6 +1582,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    gap: 70px;
   }
 }
 
@@ -1588,7 +1591,7 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .footer-address {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1596,6 +1599,8 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
+    margin-left: 76px;
+    margin-right: 95px;
   }
 }
 
@@ -1618,12 +1623,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -1664,9 +1663,10 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .footer-strong {
-    margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1738,17 +1738,17 @@ img {
 .footer-email {
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-email {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .footer-email {
+    margin-left: 166px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
